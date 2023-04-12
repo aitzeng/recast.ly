@@ -6,6 +6,12 @@ $.ajaxPrefilter(function (settings, _, jqXHR) {
 
 var searchYouTube = (query, callback) => {
   // TODO
+  $.ajax({
+    type: "GET"
+    q: query,
+    key: YOUTUBE_API_KEY
+
+  });
 };
 
 export default searchYouTube;
